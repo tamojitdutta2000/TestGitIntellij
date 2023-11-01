@@ -13,6 +13,7 @@ public class TestController {
     public ResponseEntity<TestBean> getTest() {
         TestBean testBean = TestBean.builder().code(300).message("Its ok").build();
         System.out.println("This is my first push");
+        System.out.println("Needs to be deleted");
         return ResponseEntity.ok(testBean);
 
 
