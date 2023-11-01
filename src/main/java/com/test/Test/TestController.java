@@ -12,7 +12,9 @@ public class TestController {
     @GetMapping
     public ResponseEntity<TestBean> getTest() {
         TestBean testBean = TestBean.builder().code(300).message("Its ok").build();
+        System.out.println("This is my first push");
         return ResponseEntity.ok(testBean);
+
 
     }
 
