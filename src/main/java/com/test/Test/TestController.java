@@ -20,8 +20,8 @@ public class TestController {
     }
 
     @PostMapping
-
     public ResponseEntity<TestBean> postTest(@RequestBody TestBean testBean) {
+        System.out.println("This is feature/post");
         return new ResponseEntity<>(testBean, HttpStatus.CREATED);
     }
 }
