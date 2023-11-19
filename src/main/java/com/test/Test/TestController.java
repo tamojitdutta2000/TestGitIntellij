@@ -22,6 +22,7 @@ public class TestController {
     @PostMapping
     public ResponseEntity<TestBean> postTest(@RequestBody TestBean testBean) {
         System.out.println("This is feature/post");
+        // this line is for testing fetch vs pull
         return new ResponseEntity<>(testBean, HttpStatus.CREATED);
     }
 }
